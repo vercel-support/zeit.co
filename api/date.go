@@ -8,9 +8,9 @@ import (
 
 var test Test
 
-func init(
+func init() {
 	test = Test{}
-)
+}
 
 type Test struct {}
 
