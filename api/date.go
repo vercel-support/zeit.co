@@ -6,10 +6,11 @@ import (
 	"time"
 )
 
-var test Test
+var initFn string
+var mainFn string
 
 func init() {
-	test = Test{}
+	initFn = "init()"
 }
 
 type Test struct{}
@@ -17,6 +18,10 @@ type Test struct{}
 func Handler(w http.ResponseWriter, r *http.Request) {
 	currentTime := time.Now().Format(time.RFC850)
 	fmt.Fprintf(w, currentTime)
+	fmt.Fprintf(w, initFn)
+	fmt.Fprintf(w, mainFn)
 }
 
-func main() {}
+func main() {
+	mainFn = "init()"
+}
