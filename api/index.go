@@ -9,6 +9,7 @@ var Str string
 
 func init() {
 	fmt.Println("init()")
+	Str = "HoHo"
 }
 
 // Index ...
