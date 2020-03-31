@@ -8,6 +8,7 @@ import (
 
 func main() {
 	fmt.Println("main()")
+	api.Mon = "main()"
 }
 
 func init() {
