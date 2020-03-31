@@ -11,7 +11,6 @@ var Mon string
 
 func init() {
 	fmt.Println("init()")
-	Str = "HoHo"
 	name = "Micael"
 }
 
