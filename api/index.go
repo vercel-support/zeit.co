@@ -9,7 +9,7 @@ func init() {
 	fmt.Println("init()")
 }
 
-// Handler ...
-func Handler(w http.ResponseWriter, r *http.Request) {
+// Index ...
+func Index(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "<h1>Hello from Go on Now!</h1>")
 }
